@@ -2,11 +2,13 @@
   "scripts": {
     "start": "node -r esbuild-register ./src/index.ts",
     "lint": "biome ci .",
-    "lint:fix": "biome check --write"
+    "lint:fix": "biome check --write",
+    "test": "vitest"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
     "esbuild": "^0.23.1",
-    "esbuild-register": "^3.6.0"
+    "esbuild-register": "^3.6.0",
+    "vitest": "^2.0.5"
   }
 }
